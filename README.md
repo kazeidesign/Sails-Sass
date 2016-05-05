@@ -1,3 +1,3 @@
-# sass
+# Sails-Sass
 
-a [Sails](http://sailsjs.org) application
+Use SASS in a [Sails](http://sailsjs.org) application simply with Node.js

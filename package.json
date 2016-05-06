@@ -1,8 +1,8 @@
 {
-  "name": "sass",
+  "name": "Sails-Sass",
   "private": true,
-  "version": "0.0.0",
-  "description": "a Sails application",
+  "version": "0.0.1",
+  "description": "Use SASS in a Sails application simply with Node.js",
   "keywords": [],
   "dependencies": {
     "ejs": "2.3.4",
@@ -21,7 +21,8 @@
     "include-all": "~0.1.6",
     "rc": "1.0.1",
     "sails": "~0.12.3",
-    "sails-disk": "~0.10.9"
+    "sails-disk": "~0.10.9",
+    "grunt-sass": "~1.2.0"
   },
   "scripts": {
     "debug": "node debug app.js",
@@ -30,8 +31,8 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/sass.git"
+    "url": "https://github.com/kazeidesign/Sails-Sass.git"
   },
-  "author": "anonymous node/sails user",
+  "author": "Kazei Design - Loïk Maniquant",
   "license": ""
 }

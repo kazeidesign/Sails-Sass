@@ -1,31 +1,31 @@
 /**
- * `less`
+ * `sass`
  *
  * ---------------------------------------------------------------
  *
  * Compile your LESS files into a CSS stylesheet.
  *
- * By default, only the `assets/styles/importer.less` is compiled.
+ * By default, only the `assets/styles/importer.scss` is compiled.
  * This allows you to control the ordering yourself, i.e. import your
  * dependencies, mixins, variables, resets, etc. before other stylesheets)
  *
  * For usage docs see:
- *   https://github.com/gruntjs/grunt-contrib-less
+ *   https://github.com/gruntjs/grunt-sass
  *
  */
 module.exports = function(grunt) {
 
-  grunt.config.set('less', {
+  grunt.config.set('sass', {
     dev: {
       files: [{
         expand: true,
         cwd: 'assets/styles/',
-        src: ['importer.less'],
+        src: ['importer.scss', 'importer.sass'],
         dest: '.tmp/public/styles/',
         ext: '.css'
       }]
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-sass');
 };

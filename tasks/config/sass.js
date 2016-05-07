@@ -13,19 +13,19 @@
  *   https://github.com/gruntjs/grunt-sass
  *
  */
-module.exports = function(grunt) {
+module.exports = function(grunt) {                  // Create new Grunt task
 
-  grunt.config.set('sass', {
+  grunt.config.set('sass', {                        // Task sass
     dev: {
       files: [{
-        expand: true,
-        cwd: 'assets/styles/',
-        src: ['importer.scss', 'importer.sass'],
-        dest: '.tmp/public/styles/',
-        ext: '.css'
+        expand: true,                               // 'expand directory'
+        cwd: 'assets/styles/',                      // 'source folder'
+        src: ['importer.scss', 'importer.sass'],    // 'source files'
+        dest: '.tmp/public/styles/',                // 'destination folder'
+        ext: '.css'                                 // 'extension of compiled file'
       }]
     }
   });
 
-  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-sass');                 // Load task Grunt-sass  
 };

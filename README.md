@@ -18,9 +18,7 @@ Look in your browser at [localhost:1337](http://localhost:1337). Your Sails.js a
 
 [Sails.js](http://sailsjs.org): version 0.12.3 or more
 
----
-
-SASS compiler: [Grunt-sass](https://www.npmjs.com/package/grunt-sass)
+[Grunt-sass](https://www.npmjs.com/package/grunt-sass): SASS compiler 
 
 Compile Sass to CSS using node-sass. This task uses libsass, which is a Sass compiler in C++. It's a lot faster than the original Ruby compiler and fully compatible.
 
@@ -31,6 +29,8 @@ To install Grunt-sass, use in terminal:
 or in your **package.json**:
 
 `"grunt-sass": "~1.2.0"`
+
+---
 
 #### Create SASS task
 
@@ -56,6 +56,9 @@ module.exports = function(grunt) {                  // Create new Grunt task
 
 ```
 
+---
+
+
 #### Add extension .scss and .sass in the tasks config
 
 Add ` |scss|sass ` after `less` into two files in **tasks/config/**:
@@ -66,6 +69,9 @@ Add ` |scss|sass ` after `less` into two files in **tasks/config/**:
 src: ['**/*.!(coffee|less|scss|sass)'],     // Add |scss|sass after less
 ```
 
+---
+
+
 #### Add the task sass in the register
 
 Add ` 'sass:dev,' ` after ` 'less:dev,' ` into two files in **tasks/register/**:
@@ -75,6 +81,9 @@ Add ` 'sass:dev,' ` after ` 'less:dev,' ` into two files in **tasks/register/**:
 ```js
 'sass:dev',     // Add 'sass:dev,' after 'less:dev,' 
 ```
+
+---
+
 
 #### Use it
 
